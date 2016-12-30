@@ -1,0 +1,1650 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"impl",
+				"impl\timpl … { … }"
+			],
+			[
+				"unwrap",
+				"unwrap_err        Function (result.rs) : pub fn unwrap_err(self) -> E                                    "
+			],
+			[
+				"read",
+				"read_to_string Function (mod.rs) : fn read_to_string(&mut self, buf: &mut String) -> Result<usize>   "
+			],
+			[
+				"as",
+				"as_str           Function (string.rs) : pub fn as_str(&self) -> &str                                                      "
+			],
+			[
+				"print",
+				"println\tprintln!(…)"
+			],
+			[
+				"to",
+				"to_string"
+			],
+			[
+				"mat",
+				"matches   Let (main.rs) : let matches = clap_app!(myapp =>"
+			],
+			[
+				"u",
+				"unwrap"
+			],
+			[
+				"stru",
+				"struct\tstruct … { … }"
+			],
+			[
+				"str",
+				"struct\tstruct … { … }"
+			],
+			[
+				"ex",
+				"extern-crate\textern crate …;"
+			],
+			[
+				"A",
+				"AddDelegateEventBeforeExecute"
+			],
+			[
+				"LOOP",
+				"LOOP_RELATIVE_Z"
+			],
+			[
+				"IS_",
+				"IS_TAILSTOCK_PRESENT"
+			],
+			[
+				"De",
+				"DefineConstants"
+			],
+			[
+				"Wix",
+				"WixVariables"
+			],
+			[
+				"Supp",
+				"SuppressUniqueIds"
+			],
+			[
+				"PAR",
+				"PARAM_ORI_STR2"
+			],
+			[
+				"face",
+				"faceIndex"
+			],
+			[
+				"L",
+				"Label"
+			],
+			[
+				"li",
+				"limerkNr"
+			],
+			[
+				"rel",
+				"replText"
+			],
+			[
+				"con",
+				"► containsKey(Object key) → bool"
+			],
+			[
+				"System",
+				"Systembindung"
+			],
+			[
+				"open",
+				"► openWrite({FileMode mode: FileMode.WRITE, Encoding encoding: UTF8}) → IOSink"
+			],
+			[
+				"cre",
+				"► createSync({bool recursive: false}) → void"
+			],
+			[
+				"UT",
+				"© Utf8Decoder({bool allowMalformed: false})"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/main.rs",
+			"settings":
+			{
+				"buffer_size": 2546,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Cargo.toml",
+			"settings":
+			{
+				"buffer_size": 167,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/backup/work/dartproject/tsupdate/bin/UpdateItem.dart",
+			"settings":
+			{
+				"buffer_size": 3492,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					""
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Bench"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Rust/Rust.sublime-build",
+					""
+				],
+				[
+					"Packages/Rust/Rust.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Rust Enhanced/Cargo.sublime-build",
+					""
+				],
+				[
+					"Packages/Rust Enhanced/Cargo.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Rust Enhanced/Cargo.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Rust Enhanced/Cargo.sublime-build",
+					"Bench"
+				],
+				[
+					"Packages/Rust Enhanced/Cargo.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Rust Enhanced/Cargo.sublime-build",
+					"Release"
+				],
+				[
+					"Packages/Rust Enhanced/Cargo.sublime-build",
+					"Clippy"
+				],
+				[
+					"Packages/Rust Enhanced/Rust.sublime-build",
+					""
+				],
+				[
+					"Packages/Rust Enhanced/Rust.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/Rust Enhanced/Cargo.sublime-build",
+				"Release"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Build With: Cargo"
+			],
+			[
+				"cargo ",
+				"Build With: Cargo"
+			],
+			[
+				"cargo run",
+				"Build With: Cargo - Run"
+			],
+			[
+				"cargo",
+				"Build With: Cargo"
+			],
+			[
+				"car ",
+				"Build With: Cargo - Clean"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git pull",
+				"Git: Pull Current Branch"
+			],
+			[
+				"git comm",
+				"Git: Amend Commit"
+			],
+			[
+				"git ad",
+				"Git: Diff All Files"
+			],
+			[
+				"git chec",
+				"Git: Change Branch"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"git gui",
+				"Git: Gui"
+			],
+			[
+				"git uns",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"gi add",
+				"Git: Add All"
+			],
+			[
+				"ind",
+				"Indent XML"
+			],
+			[
+				"git chan",
+				"Git: Change Branch"
+			],
+			[
+				"git new ",
+				"Git: New Branch"
+			],
+			[
+				"git cha",
+				"Git: Change Branch"
+			],
+			[
+				"git bra",
+				"Git: New Branch"
+			],
+			[
+				"git check",
+				"Git: Checkout Current File"
+			],
+			[
+				"gitad",
+				"Git: Add..."
+			],
+			[
+				"g pu",
+				"Git: Push"
+			],
+			[
+				"g co",
+				"Git: Commit"
+			],
+			[
+				"g a ",
+				"Git: Add..."
+			],
+			[
+				"git gra",
+				"Git: Graph Current File"
+			],
+			[
+				"gi pu",
+				"Git: Push"
+			],
+			[
+				"inde",
+				"Indent XML"
+			],
+			[
+				"g c",
+				"Git: Commit"
+			],
+			[
+				"g a c f",
+				"Git: Add Current File"
+			],
+			[
+				"g a c",
+				"Git: Amend Commit"
+			],
+			[
+				"g a c ",
+				"Git: Add Current File"
+			],
+			[
+				"git amen",
+				"Git: Amend Commit"
+			],
+			[
+				"git his",
+				"Git: Commit history"
+			],
+			[
+				"git diff",
+				"Git: Diff All Files"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"gi comm",
+				"Git: Commit"
+			],
+			[
+				"g a",
+				"Git: Add..."
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"open re",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"inst pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packe",
+				"Package Control: Install Package"
+			],
+			[
+				"git chekc",
+				"Git: Checkout Current File"
+			],
+			[
+				"gi co",
+				"Git: Commit"
+			],
+			[
+				"gitadd",
+				"Git: Add..."
+			],
+			[
+				"git di",
+				"Git: Diff Current File"
+			],
+			[
+				"git dif",
+				"Git: Diff Current File"
+			],
+			[
+				"git reset",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"git rese",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"git stash",
+				"Git: Stash Apply"
+			],
+			[
+				"git stas",
+				"Git: Stash Changes"
+			],
+			[
+				"git diff ",
+				"Git: Diff Current File"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git ",
+				"Git: Log All"
+			],
+			[
+				"gi ad",
+				"Git: Add Current File"
+			],
+			[
+				"gt add",
+				"Git: Add..."
+			],
+			[
+				"in",
+				"Indent XML"
+			],
+			[
+				"git checkout",
+				"Git: Checkout Tag"
+			],
+			[
+				"har",
+				"Snippet: harvest"
+			],
+			[
+				"HAR",
+				"Snippet: harvest"
+			],
+			[
+				"inden",
+				"Indent XML"
+			],
+			[
+				"ha",
+				"Snippet: harvest"
+			],
+			[
+				"harv",
+				"Snippet: harvest"
+			],
+			[
+				"sni",
+				"Snippet: harvest"
+			],
+			[
+				"Snippet: ",
+				"Snippet: harvest"
+			],
+			[
+				"snipp",
+				"Snippet: harvest"
+			],
+			[
+				"INDE",
+				"Indent XML"
+			],
+			[
+				"IN",
+				"Indent XML"
+			],
+			[
+				"git unst",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"g st",
+				"Git: Status"
+			],
+			[
+				"g p",
+				"Git: Push"
+			],
+			[
+				"git commi",
+				"Git: Commit"
+			],
+			[
+				"indent",
+				"Indent XML"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"wrap",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"xml",
+				"Indent XML"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"p c i p",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Add Current File"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"add fo",
+				"Project: Add Folder"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"toggl",
+				"Toggle Block Comment"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"dart for",
+				"Dart: Format"
+			],
+			[
+				"add fol",
+				"Project: Add Folder"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"dart",
+				"Dart: Format"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/backup/work/rust/tsupdate_rust",
+		"/C/backup/work/rust/tsupdate_rust/src"
+	],
+	"file_history":
+	[
+		"/C/backup/work/rust/tsupdate/src/credentials.yaml",
+		"/C/backup/work/rust/hello_world/src/main.rs",
+		"/C/backup/work/rust/tsupdate/src/main.rs",
+		"/C/backup/work/rust/tsupdate/src/cli.yaml",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Philips/TopPpPhilips#v=mill#i=01.mod",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Philips/TopPpPhilips#v=MillPlus_3axis#i=01.cfg",
+		"/C/backup/ppv7/preinfalk/Setup/preinfalk.wxs",
+		"/C/backup/ppv7/merkler/Dmu80T.ini",
+		"/C/backup/ppv7/merkler/Dmu60T.ini",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Siemens/TopPpSiemens#v=mill-turn_840d#i=03.cfg",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Siemens/TopPpSiemens#v=mill-turn#i=03.mod",
+		"/C/Users/ualt/AppData/Local/Temp/TEST.h",
+		"/C/backup/ppv7/PPV7/PPV7.sln",
+		"/C/backup/ppv7/preinfalk/Dmu160.ini",
+		"/C/backup/ppv7/lehner/Colgar.ini",
+		"/C/Users/ualt/AppData/Local/Temp/TopSolidCam7PPTrace.tmp",
+		"/C/Users/ualt/AppData/Local/Temp/5122-001-002-03r01_percage-FT -D130.001",
+		"/C/backup/codes/codes617_710/lehner/LEHNER_ZWEIBRUCKEN_WESTGMBH_9069_80.2697B_7.10_5.lic",
+		"/C/backup/codes/codes617_710/hettich/ANDREAS_HETTICH_GMBH_WESTGMBH_9DA0_80.233DC_7.10_4.lic",
+		"/C/backup/ppv6/Vb/PpTop/Clients/lehner/TopPpLehner/INI-Files/ColgarDrehen.ini",
+		"/C/backup/ppv6/Vb/PpTop/Clients/lehner/TopPpLehner/INI-Files/Collect060.ini",
+		"/C/backup/ppv6/Vb/PpTop/Clients/lehner/TopPpLehner/INI-Files/ColgarFraesen.ini",
+		"/C/backup/ppv7/lehner/Setup/lehner.wxs",
+		"/C/backup/ppv6/Vb/PpTop/Clients/ppsetup/Bases/Siemens/TopPpSiemens#v=Turn840d#i=03.cfg",
+		"/C/Users/ualt/AppData/Roaming/Missler Software/TopSolid/7.10/TopSolid/Kernel/SX/Config.ConfigData.xml",
+		"/C/ProgramData/Missler Software/TopSolid/7.10/TopSolid/Kernel/SX/Config.ConfigData.xml",
+		"/C/Users/ualt/AppData/Local/Temp/Test.mpf",
+		"/C/temp/trullala.x_t",
+		"/C/Users/ualt/AppData/Local/Temp/TopSolidCam7PP.pdb",
+		"/C/backup/ppv6/Vb/PpTop/Clients/ppsetup/WestCommon/PPCommon.cs",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Tnc/TopPpTnc#v=mill_530_5axis#i=02.cfg",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Tnc/TopPpTnc#v=mill#i=02.mod",
+		"/C/backup/ppv7/preinfalk/Fermat.ini",
+		"/C/backup/ppv7/Gruen/Toyoda.cs",
+		"/C/backup/ppv7/bhs/Kekeisen.cs",
+		"/D/guid_gedoens.txt",
+		"/C/backup/ppv7/preinfalk/PreinfalkAddIn.csproj",
+		"/C/backup/ppv7/bhs/CTXGamma.cs",
+		"/C/Program Files/Missler Software/TopSolid 7.10/bin/PostProcessors/preinfalk/Dmu160.ini",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Siemens/TopPpSiemens#v=mill_840d_5axis#i=01.cfg",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Siemens/TopPpSiemens#v=mill#i=01.mod",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/TopPpExec.par",
+		"/C/Program Files/Missler Software/TopSolid 7.10/bin/PostProcessors/GeislingerPp/GeislingerPp/Egal.ini",
+		"/C/Users/ualt/AppData/Local/Temp/TopSolidCam7PPExec.log",
+		"/C/backup/ppv7/preinfalk/PreinfalkAssemblyInfo.cs",
+		"/C/backup/ppv7/preinfalk/Heidenhain.cs",
+		"/C/backup/ppv7/akg/Akg.Addin/Siemens3X.cs",
+		"/C/backup/ppv7/preinfalk/PreinfalkAddIn.cs",
+		"/C/backup/ppv7/Prosup/ProsupAddIn.csproj",
+		"/C/backup/ppv7/Prosup/tnc_common.mod",
+		"/C/backup/ppv7/Raiser/Soraluce.ini",
+		"/C/backup/ppv6/Vb/PpTop/Clients/preinfalk/TopPpPreinfalk/HwaCheon.cs",
+		"/C/backup/ppv6/Vb/PpTop/Common/TopPpUtil/TopPpUtilTurn.bas",
+		"/C/backup/ppv6/Vb/PpTop/Bases/Fanuc/TopPpFanuc#v=mill-turn#i=02.mod",
+		"/C/backup/ppv6/Vb/PpTop/Bases/Fanuc/topppfanuc#v=18t#i=02.cfg",
+		"/C/backup/ppv6/Vb/PpTop/Bases/Fanuc/TopPpFanuc#V=TURN#I=02.mod",
+		"/C/backup/ppv6/Vb/PpTop/Bases/Fanuc/TopPpFanucData.cls",
+		"/C/backup/ppv7/ExternalToolDatabase/Tools/Dideldum.ico",
+		"/C/Users/ualt/AppData/Local/Temp/000000001_020_01_135.mpf",
+		"/C/Users/ualt/AppData/Local/Temp/GEHAEUSE M1635 0044 SP1-2.h",
+		"/C/Users/ualt/AppData/Local/Temp/NIEDERHALTEPLATTE 01289789-Z01-00 SP1-2.h",
+		"/C/backup/ppv7/Prosup/Eumach.ini",
+		"/C/Users/ualt/AppData/Local/Temp/OP2_1_KLEMMENKAST_CARCASSE0MA011054.h",
+		"/C/Users/ualt/AppData/Local/Temp/OP2_2_VENTILATORKAP_CARCASSE0MA011054.h",
+		"/C/backup/ppv7/bhs/CTXGamma.ini",
+		"/C/Program Files/Missler Software/TopSolid 7.10/bin/PostProcessors/Prosup/Eumach.ini",
+		"/Q/E/emano/161205/Deckel in.txt",
+		"/C/Users/ualt/AppData/Local/Temp/253833100_020_01_135.mpf",
+		"/C/backup/ppv7/bhs/Kekeisen.ini",
+		"/C/backup/ppv7/Prosup/Correa.ini",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Fanuc/TopPpFanuc#v=mill#i=02.mod",
+		"/C/backup/ppv7/Prosup/CorreaBC.ini",
+		"/C/Users/ualt/AppData/Local/Temp/Part262_2.fan",
+		"/C/Users/ualt/AppData/Local/Temp/Part262_1.fan",
+		"/C/Users/ualt/AppData/Local/Temp/Part262_1",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Fanuc/Mazak/TopPpFanucMazak#v=mill_5axis#i=02.cfg",
+		"/C/Users/ualt/AppData/Local/Temp/851020369V00_060_02_157.mpf",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Siemens/Dmg/TopPpSiemensDmg#v=CTX_840d#i=04.cfg",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Siemens/Dmg/TopPpSiemensDmg#v=CTX#i=04.mod",
+		"/C/backup/ppv7/ExternalToolDatabase/ExternalToolDatabase.Plugin.csproj",
+		"/C/backup/ppv7/akg/Akg.Addin/Akg.Addin.csproj",
+		"/C/backup/ppv7/PPV7/TopSolid-Dll/7.10/link.bat",
+		"/C/backup/ppv7/PPV7/TopSolid-Dll/7.10/ppcopy.bat",
+		"/C/backup/ppv7/panmetall/Dmu.ini",
+		"/C/Program Files (x86)/WiX Toolset v3.10/SDK/wix.ca.targets",
+		"/C/Program Files (x86)/MSBuild/14.0/Bin/amd64/Microsoft.CSharp.CurrentVersion.targets",
+		"/C/Program Files (x86)/MSBuild/14.0/Bin/amd64/Microsoft.CSharp.targets",
+		"/C/Program Files (x86)/MSBuild/14.0/Bin/amd64/Microsoft.CSharp.Core.targets",
+		"/C/Users/ualt/AppData/Local/Temp/AUFSATZBACKE 5 466 620 BEARBEITUNG 1.h",
+		"/C/backup/ppv7/Prosup/Heidenhain_3Axis.ini",
+		"/C/backup/ppv7/Prosup/Heidenhain_5Axis.ini",
+		"/C/Users/ualt/AppData/Local/Temp/PART262_.h",
+		"/C/temp/Eumach.ini",
+		"/C/Users/ualt/AppData/Local/Temp/PART262_2.h",
+		"/C/Users/ualt/AppData/Local/Temp/PART262.h",
+		"/C/backup/kunden/E/emano/161122/2016-11-22 Hurco Bartosz/Hurco/003-7002-002.sldasm",
+		"/C/backup/ppv7/Raiser/ProgramHeader.mod",
+		"/C/backup/ppv7/panmetall/Fanuc.ini",
+		"/C/backup/ppv7/panmetall/Setup/panmetall.wxs",
+		"/C/backup/ppv7/Raiser/Matec.ini",
+		"/C/backup/ppv7/Raiser/ZayerKairos.ini",
+		"/C/Users/ualt/AppData/Local/Temp/KONSOLE 01279072-Z01-00.h",
+		"/C/backup/kunden/R/raiser/161121/KONSOLE 01279072-Z01-00.h",
+		"/Q/A/adequate/161118/TopPpUltimaxP001/TopPpUltimaxP001_4axis.ini",
+		"/Q/A/adequate/161118/TopPpUltimaxP001/modCommons.bas",
+		"/Q/A/adequate/161118/TopPpUltimaxP001/TopPpUltimaxP001.cls",
+		"/Q/A/adequate/161118/TopPpUltimaxP001/TopPpUltimaxP001.ini",
+		"/C/temp/TopPpUltimaxP001/TopPpUltimaxP001.cls",
+		"/C/temp/TopPpUltimaxP001/TopPpUltimaxP001.ini",
+		"/C/backup/ppv6/Vb/PpTop/Clients/ppsetup/Bases/Ultimax/TopPpUltimax#v=MILL#i=01.cfg",
+		"/C/backup/ppv7/bhs/Heller.ini",
+		"/C/backup/ppv7/akg/Akg.Addin/Siemens810C.ini",
+		"/C/backup/ppv7/akg/Automating.Executable/Services.Akg.Automating.Executable.csproj",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Siemens/TopPpSiemens#v=mill_840c_3axis#i=01.cfg",
+		"/C/backup/ppv7/panmetall/Heidenhain.cs",
+		"/C/Users/ualt/AppData/Local/Temp/Bearbeitung_0406.121.3200",
+		"/C/backup/ppv7/akg/Akg.Addin/Heidenhain.ini",
+		"/C/temp/Mpf6116_VSC800.nwd",
+		"/C/temp/Mpf6116_Topsolid7.nwd",
+		"/C/Users/ualt/AppData/Local/Temp/1300779900_BEARBEITUNG.h",
+		"/C/backup/ppv7/Prosup/Heidenhain.cs",
+		"/C/backup/ppv7/panmetall/PanMetallAddIn.csproj",
+		"/C/backup/ppv7/lehner/Agie.ini",
+		"/C/backup/ppv7/panmetall/PanmetallAddIn.csproj.user",
+		"/C/backup/ppv7/panmetall/PanmetallAssemblyInfo.cs",
+		"/C/backup/ppv7/panmetall/PanmetallAddIn.cs",
+		"/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/BasesWire/Agie/TopPpAgie#v=wire_job+geo#i=01.cfg",
+		"/C/Users/ualt/AppData/Local/Temp/WIRE6.JOB"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\backup\\codes\\codes617_710",
+			"C:\\backup\\ppv7\\",
+			"C:\\backup\\ppv7\\ExternalToolDatabase",
+			"C:\\backup\\ppv7\\ExternalToolDatabase\\*.*",
+			"*.*",
+			"*.cs",
+			"*.ini",
+			"*.cs",
+			"*.wixproj",
+			"*.cs",
+			"C:\\backup\\ppv7,*.wixproj",
+			"c:\\backup\\ppv7\\*.wixproj",
+			"*.wixproj",
+			"*.csproj",
+			"*.*",
+			"*.ini",
+			"*.csproj",
+			"*.wixproj",
+			"Setup.wxs",
+			"*.wixproj",
+			"*.wxs",
+			".wxs",
+			"*.wixproj",
+			"*.wxs"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			" &'a",
+			").unwrap().as_str().unwrap().to_string()",
+			"hash.get(&Yaml::from_str",
+			"realm",
+			"master_file",
+			"realm",
+			"String",
+			".to_string()",
+			"&str",
+			"String",
+			"Prosup",
+			"Geis",
+			"Any",
+			"3594",
+			"     ",
+			"backup",
+			"C8",
+			"Schiess",
+			"Spann",
+			"G75",
+			"LoadDelegateDataText",
+			"LoadDelegateData",
+			"SPINDLE_ROT",
+			"Spindle",
+			"R",
+			"b_axis",
+			"baxis",
+			"Prosup",
+			"TNC_MASTER",
+			"X",
+			"IS_SPECIAL_CYCLE",
+			"AddPPData",
+			"AddPpData",
+			"C0",
+			"Pros",
+			"Prosu",
+			"call lbl",
+			"mydefine_matrix_begin",
+			"matrix",
+			"transmit",
+			"operation,begin",
+			"G12",
+			"transmi",
+			"transmit",
+			"IS_OPE_TRA",
+			"Y_TO_C",
+			"IS_OPE_TR",
+			"IS_OPE_",
+			"transmit",
+			"l1102",
+			"L1102",
+			"l1100",
+			"0",
+			"PLANE SPATIAL",
+			"XDIAM_CODE",
+			"ccs",
+			"PLANE_SEQ",
+			"l1100",
+			"L1100",
+			"G_WORK_",
+			"1100",
+			"context_num",
+			"L1105",
+			"RL_",
+			"RL",
+			";$",
+			"origin",
+			"CALC_HEAD",
+			"N1840 ",
+			"calc_head",
+			"840D",
+			"413",
+			"412",
+			"cases",
+			"FormIcon",
+			"TX",
+			"dll",
+			".SX",
+			"R690",
+			"Cam.NC.Kernel.TX",
+			"        <Reference Include=\"",
+			"..\\..\\",
+			"OpenPackages",
+			".SX",
+			"L1101",
+			"<Target",
+			"Target",
+			"cycl def 247",
+			"//",
+			"mydefine_origin",
+			"247",
+			"begin pgm",
+			"trull",
+			"olym",
+			"olympia",
+			"oly",
+			"olympia",
+			"PLANE SPA",
+			"IS_TAPP",
+			"tapp",
+			"207",
+			"C0",
+			"LBL 60",
+			"FACE,BEGIN",
+			"matrix",
+			"spindle_coolant",
+			"toolno",
+			"coolant",
+			"G710",
+			";\\n",
+			"IDENT_PRO",
+			"N[0-9]+\\s",
+			"goto_a",
+			"tapp",
+			"74",
+			"Hurco",
+			"Prosup",
+			"ErpPartNumber",
+			"C4",
+			"BEGIN,CASES",
+			"cases",
+			"_BEGIN_CASES",
+			"cases",
+			"case",
+			"1101",
+			"rl_comm",
+			"AddDele",
+			"cases"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"Preinfalk",
+			"",
+			"call link.bat ",
+			"\\n",
+			"",
+			"Panmetall",
+			"BEGIN_CASES",
+			",",
+			",\\n",
+			"><Path>..\\Bases\\</Path></PpBase>",
+			"><Path>..\\Bases\\</Path>",
+			"",
+			"PpBase",
+			" />",
+			"",
+			"PpBase",
+			" ?>",
+			"/>",
+			">",
+			";\\n",
+			"<PpBase Include=\"",
+			"</PreprocessorVariable><DirectoryRefId>INSTALLDIR</DirectoryRefId>",
+			"\"",
+			"TopPpGilbos",
+			"",
+			"BHS",
+			"",
+			"MATRIX_OZ",
+			"MATRIX_OY",
+			"<DefineConstants>TRACE</DefineConstants>",
+			"<DefineConstants>DEBUG;TRACE",
+			"",
+			"<PropertyGroup Condition=\" '$(Configuration)|$(Platform)' == 'Debug|x64' \"><RefAssyPath>7.10</RefAssyPath>",
+			"Include=\"..\\..\\ppsetup\\SetupLib\\SetupLib.wixproj\"",
+			"UpgradeCode=''",
+			"",
+			"..\\..\\ppsetup\\SetupLib",
+			"..\\ppsetup\\SetupLib",
+			"<SccLocalPath>SAK</SccLocalPath><IncludeSearchPaths>..\\..\\PPV7\\</IncludeSearchPaths>",
+			"\\r\\n",
+			"(\\r\\n)",
+			"",
+			"?> <Feature Id=",
+			"<?include SetupV6.wxi ?>",
+			"<SuppressValidation>True</SuppressValidation><IncludeSearchPaths>..\\..\\PPV7\\</IncludeSearchPaths>",
+			"Keine Änderung"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/main.rs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2546,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1640,
+								1640
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rust/Rust.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 575.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Cargo.toml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 167,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								167,
+								167
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TOML/TOML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "/C/backup/work/dartproject/tsupdate/bin/UpdateItem.dart",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3492,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dart/Dart.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.dart.analyzer":
+	{
+		"height": 100.0
+	},
+	"output.dart.out":
+	{
+		"height": 94.0
+	},
+	"output.exec":
+	{
+		"height": 368.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 494.0
+	},
+	"pinned_build_system": "",
+	"project": "tsupdate_rust.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"preinfalk.w",
+				"ppv7\\preinfalk\\Setup\\preinfalk.wxs"
+			],
+			[
+				"philipsv=mill",
+				"Bases V7\\Philips\\TopPpPhilips#v=mill#i=01.mod"
+			],
+			[
+				"millplus_",
+				"Bases V7\\Philips\\TopPpPhilips#v=MillPlus_3axis#i=01.cfg"
+			],
+			[
+				"preinf",
+				"ppv7\\preinfalk\\Setup\\preinfalk.wxs"
+			],
+			[
+				"ppv7.",
+				"ppv7\\PPV7\\PPV7.sln"
+			],
+			[
+				"pre",
+				"ppv7\\preinfalk\\Setup\\preinfalk.wxs"
+			],
+			[
+				"colgar.",
+				"ppv7\\lehner\\Colgar.ini"
+			],
+			[
+				"dmu16",
+				"ppv7\\preinfalk\\Dmu160.ini"
+			],
+			[
+				"topppsiemensmill",
+				"Bases V7\\Siemens\\TopPpSiemens#v=mill-turn#i=03.mod"
+			],
+			[
+				"siemensmillturn",
+				"Bases V7\\Siemens\\TopPpSiemens#v=mill-turn_840d#i=03.cfg"
+			],
+			[
+				"colgar",
+				"ppv7\\lehner\\Colgar.ini"
+			],
+			[
+				"siemensturn840d",
+				"Clients V6\\ppsetup\\Bases\\Siemens\\TopPpSiemens#v=Turn840d#i=03.cfg"
+			],
+			[
+				"siemensturn84",
+				"Clients V6\\ppsetup\\Bases\\Siemens\\TopPpSiemens#v=Turn840d#i=03.cfg"
+			],
+			[
+				"coll",
+				"Clients V6\\lehner\\TopPpLehner\\INI-Files\\Collect060.ini"
+			],
+			[
+				"ppcomm",
+				"Clients V6\\ppsetup\\WestCommon\\PPCommon.cs"
+			],
+			[
+				"toppptncmill",
+				"Bases V7\\Tnc\\TopPpTnc#v=mill#i=02.mod"
+			],
+			[
+				"mill_530",
+				"Bases V7\\Tnc\\TopPpTnc#v=mill_530_5axis#i=02.cfg"
+			],
+			[
+				"preinferm",
+				"ppv7\\preinfalk\\Fermat.ini"
+			],
+			[
+				"preindm",
+				"ppv7\\preinfalk\\Dmu160.ini"
+			],
+			[
+				"ctxgamma",
+				"ppv7\\bhs\\CTXGamma.cs"
+			],
+			[
+				"toppptnc",
+				"Bases V7\\Tnc\\TopPpTnc#v=mill#i=02.mod"
+			],
+			[
+				"preinfalkdm",
+				"ppv7\\preinfalk\\Dmu160.ini"
+			],
+			[
+				"hwache",
+				"Clients V6\\preinfalk\\TopPpPreinfalk\\HwaCheon.cs"
+			],
+			[
+				"toppptncmod",
+				"Bases V7\\Tnc\\TopPpTnc#v=mill#i=02.mod"
+			],
+			[
+				"soral",
+				"ppv7\\Raiser\\Soraluce.ini"
+			],
+			[
+				"tnc_com",
+				"ppv7\\Prosup\\tnc_common.mod"
+			],
+			[
+				"eumach",
+				"ppv7\\Prosup\\Eumach.ini"
+			],
+			[
+				"ctxgamm",
+				"ppv7\\bhs\\CTXGamma.ini"
+			],
+			[
+				"ctxga",
+				"ppv7\\bhs\\CTXGamma.ini"
+			],
+			[
+				"fanucmillmod",
+				"Bases V7\\Fanuc\\TopPpFanuc#v=mill#i=02.mod"
+			],
+			[
+				"topppfanucmill",
+				"Bases V7\\Fanuc\\Mazak\\TopPpFanucMazak#v=mill_5axis#i=02.cfg"
+			],
+			[
+				"corre",
+				"ppv7\\Prosup\\Correa.ini"
+			],
+			[
+				"kekeis",
+				"ppv7\\bhs\\Kekeisen.ini"
+			],
+			[
+				"siemensdmg",
+				"Bases V7\\Siemens\\Dmg\\TopPpSiemensDmg#v=CTX#i=04.mod"
+			],
+			[
+				"ctx",
+				"ppv7\\bhs\\CTXGamma.ini"
+			],
+			[
+				"tnc_co",
+				"ppv7\\Prosup\\tnc_common.mod"
+			],
+			[
+				"heidenhain_5",
+				"ppv7\\Prosup\\Heidenhain_5Axis.ini"
+			],
+			[
+				"heidenhain_3",
+				"ppv7\\Prosup\\Heidenhain_3Axis.ini"
+			],
+			[
+				"panmetall.wxs",
+				"ppv7\\panmetall\\Setup\\panmetall.wxs"
+			],
+			[
+				"raisermate",
+				"ppv7\\Raiser\\Matec.ini"
+			],
+			[
+				"topppultimax",
+				"Clients V6\\ppsetup\\Bases\\Ultimax\\TopPpUltimax#v=MILL#i=01.cfg"
+			],
+			[
+				"panmet",
+				"ppv7\\panmetall\\Dmu.ini"
+			],
+			[
+				"panmetaheiden",
+				"ppv7\\panmetall\\Heidenhain.cs"
+			],
+			[
+				"panmeta.cs",
+				"ppv7\\panmetall\\Heidenhain.cs"
+			],
+			[
+				"akgserv",
+				"ppv7\\akg\\Automating.Executable\\Services.Akg.Automating.Executable.csproj"
+			],
+			[
+				"bhshell",
+				"ppv7\\bhs\\Heller.ini"
+			],
+			[
+				"mill_840c",
+				"Bases V7\\Siemens\\TopPpSiemens#v=mill_840c_3axis#i=01.cfg"
+			],
+			[
+				"topppsiemens.mod",
+				"Bases V7\\Siemens\\TopPpSiemens#v=mill#i=01.mod"
+			],
+			[
+				"akgheiden",
+				"ppv7\\akg\\Akg.Addin\\Heidenhain.ini"
+			],
+			[
+				"akgsieme",
+				"ppv7\\akg\\Akg.Addin\\Siemens810C.ini"
+			],
+			[
+				"akghei",
+				"ppv7\\akg\\Akg.Addin\\Heidenhain.ini"
+			],
+			[
+				"heidenhain.cs",
+				"ppv7\\panmetall\\Heidenhain.cs"
+			],
+			[
+				"heidenhain3",
+				"ppv7\\Prosup\\Heidenhain_3Axis.ini"
+			],
+			[
+				"ppv7.sln",
+				"ppv7\\PPV7\\PPV7.sln"
+			],
+			[
+				"topppagie",
+				"Bases Wire V7\\Agie\\TopPpAgie#v=wire_job+geo#i=01.cfg"
+			],
+			[
+				"ctxgamma.",
+				"ppv7\\bhs\\CTXGamma.cs"
+			],
+			[
+				"prosupheiden",
+				"ppv7\\Prosup\\Heidenhain_3Axis.ini"
+			],
+			[
+				"pathdes",
+				"Clients\\ppsetup\\SetupLib\\PathDefines.wxi"
+			],
+			[
+				"leipertwacocomm",
+				"Clients\\leipert\\TopPpLeipert\\Classes\\NewWacoCommon.cs"
+			],
+			[
+				"heller",
+				"ppv7\\bhs\\Heller.ini"
+			],
+			[
+				"prosup",
+				"ppv7\\Prosup\\Setup\\prosup.wxs"
+			],
+			[
+				"prosupset",
+				"Clients\\prosup\\Setup\\Setup.wxs"
+			],
+			[
+				"heiden3axi",
+				"ppv7\\Prosup\\Heidenhain_3Axis.ini"
+			],
+			[
+				"heide_5axis",
+				"ppv7\\Prosup\\Heidenhain_5Axis.ini"
+			],
+			[
+				"toppptnc.mod",
+				"Bases\\Tnc\\TopPpTnc#v=mill#i=02.mod"
+			],
+			[
+				"topptnc.mod",
+				"Clients\\ppsetup\\Bases\\Tnc\\TopPpTnc#v=iTnc530_Heid#i=26.MOD"
+			],
+			[
+				"prosupadd",
+				"ppv7\\Prosup\\ProsupAddIn.csproj"
+			],
+			[
+				"akgadd",
+				"ppv7\\akg\\Akg.Addin\\Akg.Addin.csproj"
+			],
+			[
+				"vollackadd",
+				"ppv7\\Vollack\\VollackAddin.csproj"
+			],
+			[
+				"prosupheidenh",
+				"ppv7\\Prosup\\Heidenhain.cs"
+			],
+			[
+				"heid_5",
+				"ppv7\\Prosup\\Heidenhain_5Axis.ini"
+			],
+			[
+				"=umc",
+				"Bases\\Fanuc\\Haas\\TopPpFanucHaas#v=UMC750#i=02.cfg"
+			],
+			[
+				"umc",
+				"ppv7\\Lufratech\\HaasUmc.ini"
+			],
+			[
+				"kek",
+				"ppv7\\bhs\\Kekeisen.ini"
+			],
+			[
+				"topppsiemens",
+				"Bases\\Siemens\\TopPpSiemens#v=mill-turn#i=03.mod"
+			],
+			[
+				"bhscycle",
+				"ppv7\\bhs\\CycleControl.mod"
+			],
+			[
+				"heidenhain_",
+				"ppv7\\Prosup\\Heidenhain_5Axis.ini"
+			],
+			[
+				"toppptnc426",
+				"Clients\\ppsetup\\Bases\\Tnc_Iso\\TopPpTnc_Iso#V=426#i=02.cfg"
+			],
+			[
+				"hart",
+				"ppv7\\Prosup\\Hartford530.ini"
+			],
+			[
+				"fermat.cs",
+				"Clients\\preinfalk\\TopPpPreinfalk\\Fermat.cs"
+			],
+			[
+				"fermat",
+				"ppv7\\preinfalk\\Fermat.ini"
+			],
+			[
+				"cycle",
+				"ppv7\\bhs\\CycleControl.mod"
+			],
+			[
+				"hartfor",
+				"ppv7\\Prosup\\Hartford530.ini"
+			],
+			[
+				"hartfo",
+				"ppv7\\Prosup\\Hartford426.ini"
+			],
+			[
+				"setuplib",
+				"Clients\\ppsetup\\SetupLib\\SetupLib.wixproj"
+			],
+			[
+				"bhscomm",
+				"ppv7\\bhs\\BhsCommon.cs"
+			],
+			[
+				"prosuphart",
+				"ppv7\\Prosup\\Hartford530.ini"
+			],
+			[
+				"prosupcorre",
+				"ppv7\\Prosup\\Correa.ini"
+			],
+			[
+				"lehnerwix",
+				"Clients\\lehner\\Setup\\SetupLehner.wixproj"
+			],
+			[
+				"lehner.wxs",
+				"Clients\\lehner\\Setup\\lehner_bin.wxs"
+			],
+			[
+				"lehnerset",
+				"Clients\\lehner\\Setup\\Setup.wxs"
+			],
+			[
+				"setuppreinfalk.",
+				"Clients\\preinfalk\\Setup\\SetupPreinfalk.wixproj"
+			],
+			[
+				"gilboscspro",
+				"Clients\\gilbos\\TopPpGilbos\\TopPpGilbos.csproj"
+			],
+			[
+				".sln",
+				"Clients\\PPV6.sln"
+			],
+			[
+				"gil",
+				"Clients\\gilbos\\TopPpSiemensgil1\\Setup\\gilbos.wxs"
+			],
+			[
+				"gil.wxs",
+				"Clients\\gilbos\\TopPpSiemensgil1\\Setup\\gilbos.wxs"
+			],
+			[
+				"gilbossetu",
+				"Clients\\gilbos\\TopPpSiemensgil1\\Setup\\Setup.wxs"
+			],
+			[
+				"neosid",
+				"Clients\\Neosid\\Setup\\SetupNeosid.wixproj"
+			],
+			[
+				"precu",
+				"Clients\\isobar\\SetupPrecupa\\SetupPrecupa.wixproj"
+			],
+			[
+				"prosuse",
+				"Clients\\prosup\\Setup\\SetupProsup.wixproj"
+			],
+			[
+				"prosu",
+				"Clients\\prosup\\TopPpProsup2\\TopPpProsup2.csproj"
+			],
+			[
+				"pockau/setup",
+				"Clients\\pockau\\Setup\\Setup.wxs"
+			],
+			[
+				"leipert/",
+				"Clients\\leipert\\TopPpLeipert\\TopPpLeipert.csproj"
+			],
+			[
+				"setupv6",
+				"Clients\\ppsetup\\SetupLib\\SetupV6.wxi"
+			],
+			[
+				"heiden",
+				"ppv7\\Prosup\\Heidenhain.cs"
+			],
+			[
+				"prosup/",
+				"ppv7\\Prosup\\Correa.ini"
+			],
+			[
+				"heid",
+				"ppv7\\Prosup\\Heidenhain.cs"
+			],
+			[
+				"bhs/bhscomm",
+				"ppv7\\bhs\\BhsCommon.cs"
+			],
+			[
+				"phili",
+				"ppv7\\merkler\\Philips.ini"
+			],
+			[
+				"dmu80",
+				"ppv7\\merkler\\Dmu80T.ini"
+			],
+			[
+				"up",
+				"bin\\UpdateItem.dart"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\backup\\work\\rust\\hello_world\\rust_hello_world.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 320.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
