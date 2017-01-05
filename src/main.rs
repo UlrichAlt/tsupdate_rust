@@ -1,4 +1,4 @@
-
+extern crate md5;
 extern crate docopt;
 extern crate rustc_serialize;
 extern crate yaml_rust;
@@ -6,16 +6,15 @@ extern crate regex;
 extern crate hyper;
 
 use docopt::Docopt;
-use std::fs::File;
+use std::fs::{File, DirBuilder, OpenOptions};
 use std::io::prelude::*;
 use std::io::BufReader;
 use yaml_rust::{YamlLoader, Yaml};
 use yaml_rust::yaml::Hash;
-use std::path::Path;
+use std::path::{Path, PathBuf};
 use hyper::client::Client;
 use hyper::header::{Headers, Authorization, Basic};
 use hyper::Url;
-use std::path::PathBuf;
 
 // Write the Docopt usage string.
 const USAGE: &'static str = "
@@ -67,14 +66,12 @@ impl Level {
 struct Args {
     arg_path: String,
     arg_version: String,
-    flag_help: bool,
     flag_cred: String,
     flag_arch: Arch,
     flag_access: Level,
 }
 
 struct Credentials {
-    realm: String,
     user: String,
     password: String,
     website: String,
@@ -101,7 +98,6 @@ fn get_credentials(args: &Args) -> Option<Credentials> {
             let y = &YamlLoader::load_from_str(&buf).unwrap()[0];
             let hash = y.as_hash().unwrap();
             Some(Credentials {
-                realm: get_value_from_hash(hash, "realm"),
                 user: get_value_from_hash(hash, "user"),
                 password: get_value_from_hash(hash, "password"),
                 website: get_value_from_hash(hash, "website"),
@@ -119,6 +115,8 @@ struct UpdateItem {
     size: u32,
     product: String,
     digest: String,
+    downloaded: bool,
+    checked: bool,
 }
 
 impl PartialEq for UpdateItem {
@@ -150,6 +148,8 @@ fn make_update_item(args: &Args,
                             filename: capt.get(6).unwrap().as_str().to_string(),
                             size: capt.get(7).unwrap().as_str().parse::<u32>().unwrap(),
                             digest: capt.get(9).unwrap().as_str().to_uppercase().to_string(),
+                            downloaded: false,
+                            checked: false,
                         })
                     } else {
                         None
@@ -176,8 +176,6 @@ fn read_present_items(args: &Args, creds: &Credentials, reg: &regex::Regex) -> V
     }
     pitems
 }
-
-
 
 fn read_web_items(args: &Args,
                   creds: &Credentials,
@@ -215,44 +213,99 @@ fn read_web_items(args: &Args,
 fn download_patches(args: &Args,
                     creds: &Credentials,
                     disk: &Vec<UpdateItem>,
-                    web: &Vec<UpdateItem>,
+                    web: &mut Vec<UpdateItem>,
                     client: &Client) {
 
-    let mut auth_headers = Headers::new();
-    auth_headers.set(Authorization(Basic {
-        username: creds.user.to_owned(),
-        password: Some(creds.password.to_owned()),
-    }));
-
-    let url = Url::parse(&creds.website).unwrap();
-    for ui in web.iter() {
+    for ui in web.iter_mut() {
         if !disk.iter().any(|u| u == ui) {
-            println!("Downloading {:?}", ui.filename);
-            let url = url.join(&args.arg_version).unwrap().join(args.flag_arch.as_text()).unwrap().join(&ui.product).unwrap().join(&ui.filename).unwrap();
-            match client.get(url).send() {
+            println!("Downloading {}", ui.filename);
+            let url = format!("{}/{}/{}/{}/{}",
+                              &creds.website,
+                              &args.arg_version,
+                              args.flag_arch.as_text(),
+                              &ui.product,
+                              &ui.filename);
+            let mut auth_headers = Headers::new();
+            auth_headers.set(Authorization(Basic {
+                username: creds.user.to_owned(),
+                password: Some(creds.password.to_owned()),
+            }));
+            match client.get(&url).headers(auth_headers).send() {
                 Ok(mut res) => {
-                    let mut filepath = PathBuf::from(&args.arg_path);
-                    filepath.push(&args.arg_version);
-                    filepath.push(args.flag_arch.as_text());
-                    filepath.push(&ui.product);
-                    filepath.push(&ui.filename);
-
-                    match File::create(filepath) {
+                    match File::create(compute_path(args, ui, true)) {
                         Ok(mut outf) => {
                             match std::io::copy(&mut res, &mut outf) {
-                                Ok(_) => {},
-                                Err(_) => println!("An error occurred when downloading!")
+                                Ok(_) => ui.downloaded = true,
+                                Err(_) => println!("An error occurred when downloading!"),
                             }
-
-                        },
-                        Err(_) => println!("Could not create output file."),
+                        }
+                        Err(e) => println!("Could not create output file. {:?}", e),
                     }
-                },
+                }
                 Err(_) => println!("Could not download {}", ui.filename),
             }
 
         }
 
+    }
+}
+
+fn compute_path(args: &Args, ui: &UpdateItem, create_dir: bool) -> PathBuf {
+    let mut filepath = PathBuf::from(&args.arg_path);
+    filepath.push(&args.arg_version);
+    filepath.push(args.flag_arch.as_text());
+    filepath.push(&ui.product);
+
+    if !filepath.exists() && create_dir {
+        DirBuilder::new().recursive(true).create(&filepath).unwrap();
+    }
+    filepath.push(&ui.filename);
+    filepath
+}
+
+fn check_md5_sums(args: &Args, web: &mut Vec<UpdateItem>) {
+    for ui in web.iter_mut().filter(|u| u.downloaded) {
+        let path = compute_path(args, ui, false);
+        match File::open(&path) {
+            Ok(mut inf) => {
+                let mut md5_con = md5::Context::new();
+                match std::io::copy(&mut inf, &mut md5_con) {
+                    Ok(_) => {
+                        ui.checked = format!("{:X}", md5_con.compute()) == ui.digest;
+                        std::fs::remove_file(path).unwrap();
+                    }
+                    Err(_) => {}
+                }
+            }
+            Err(_) => {}
+        }
+    }
+}
+
+fn update_master_file(args: &Args, creds: &Credentials, web: &Vec<UpdateItem>) {
+    let local_master = PathBuf::from(&args.arg_path).join(&creds.master_file);
+    let access_text = args.flag_access.as_text();
+    let arch_text = args.flag_arch.as_text();
+    match OpenOptions::new().append(true).open(&local_master) {
+        Ok(mut fi) => {
+            for ui in web.iter().filter(|u| u.checked) {
+                write!(&mut fi,
+                       "{} {}/{}/{}/{} {} bytes MD5:{}\n",
+                       access_text,
+                       args.arg_version,
+                       arch_text,
+                       ui.product,
+                       ui.filename,
+                       ui.size,
+                       ui.digest)
+                    .unwrap();
+            }
+        }
+        Err(_) => println!("Could not write Master file"),
+    }
+    let tag_file = PathBuf::from(&args.arg_path).join(&creds.tag_file);
+    if !tag_file.exists() {
+        File::create(tag_file).unwrap();
     }
 }
 
@@ -264,14 +317,19 @@ fn main() {
             let reg = regex::Regex::new(r"((Com|Dev|Test)[\s-]+)?([0-9\.]+)/(x86|x64)/([\w'\s]+)/([^/]+)\s(\d+)\sbytes(\sMD5:([0-9A-Fa-f]+))?$").unwrap();
             let items_from_disk = read_present_items(&args, &creds, &reg);
             if !items_from_disk.is_empty() {
-                println!("{:?}", items_from_disk);
                 let client = Client::new();
-                let items_from_web = read_web_items(&args, &creds, &reg, &client);
+                let mut items_from_web = read_web_items(&args, &creds, &reg, &client);
                 if !items_from_web.is_empty() {
-                    download_patches(&args, &creds, &items_from_disk, &items_from_web, &client);
+                    download_patches(&args,
+                                     &creds,
+                                     &items_from_disk,
+                                     &mut items_from_web,
+                                     &client);
+                    check_md5_sums(&args, &mut items_from_web);
+                    update_master_file(&args, &creds, &items_from_web)
                 }
             }
-        },
+        }
         None => println!("Credentials file {} could not be found.", args.flag_cred),
     }
 }
