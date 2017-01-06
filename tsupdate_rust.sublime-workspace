@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"Path",
+				"PathBuf  Struct (path.rs) : pub struct PathBuf                                      "
+			],
+			[
+				"ex",
+				"exists"
+			],
+			[
+				"fil",
+				"filename"
+			],
+			[
+				"fla",
+				"flag_access StructField (main.rs) : Level "
+			],
+			[
+				"rem",
+				"remove_file      Function (fs.rs) : pub fn remove_file<P: AsRef<Path>>(path: P) -> io::Result<()>                       "
+			],
+			[
+				"di",
+				"digest"
+			],
+			[
+				"c",
+				"compute      Function (lib.rs) : pub fn compute(mut self) -> Digest                        "
+			],
+			[
+				"md5",
+				"md5_com"
+			],
+			[
+				"comp",
+				"compute_path   Function (main.rs) : fn compute_path(args: &Args, ui: &UpdateItem, create_dir: bool) -> PathBuf"
+			],
+			[
 				"downl",
 				"downloaded"
 			],
@@ -14,10 +50,6 @@
 			[
 				"to",
 				"to_owned"
-			],
-			[
-				"Path",
-				"PathBuf          Struct (path.rs) : pub struct PathBuf                                     "
 			],
 			[
 				"pr",
@@ -86,10 +118,6 @@
 			[
 				"str",
 				"struct\tstruct … { … }"
-			],
-			[
-				"ex",
-				"extern-crate\textern crate …;"
 			],
 			[
 				"A",
@@ -163,9 +191,29 @@
 			"file": "src/main.rs",
 			"settings":
 			{
-				"buffer_size": 9611,
+				"buffer_size": 10924,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "    ~/tsupdate_rust/target% lldb --version\n    lldb version 3.9.0 ( revision )\n    ~/tsupdate_rust/target% rustc --version\n    rustc 1.16.0-nightly (468227129 2017-01-03)\n    ~/tsupdate_rust/target% uname -a\n    FreeBSD trueos-7337.west-gmbh 12.0-CURRENT FreeBSD 12.0-CURRENT #11 8b9df91(drm-next-4.7): Sat Dec 24 15:17:28 UTC 2016     root@gauntlet:/usr/obj/usr/src/sys/GENERIC  amd64\n    ~/tsupdate_rust/target% cat ../Cargo.toml \n    [package]\n    name = \"tsupdate\"\n    version = \"0.1.0\"\n    authors = [\"ualt\"]\n\n    [dependencies]\n    regex = \"^0.2.1\"\n    yaml-rust = \"^0.3.5\"\n    docopt = \"^0.6.86\"\n    rustc-serialize = \"^0.3.22\"\n    hyper = { version = \"0.9\", default-features=false, features=[] }\n    md5 = \"^0.3.2\"\n\n    [profile.dev]\n    opt-level = 0\n    debug = true\n    lto = false\n    rpath = false\n    debug-assertions = true\n    codegen-units = 1\n    panic = 'unwind'\n\n    ~/tsupdate_rust/target% cargo build\n        Finished debug [unoptimized + debuginfo] target(s) in 0.1 secs\n    ~/tsupdate_rust/target% lldb debug/tsupdate test 7.10\n    (lldb) target create \"debug/tsupdate\"\n    Current executable set to 'debug/tsupdate' (x86_64).\n    (lldb) settings set -- target.run-args  \"test\" \"7.10\"\n    (lldb) b tsupdate::main\n    Breakpoint 1: where = tsupdate`tsupdate::main::h8bec70c0222b27b2 + 11, address = 0x00000000000a882b\n    (lldb) r\n    Process 7265 launching\n    Process 7265 launched: '/usr/home/ualt/tsupdate_rust/target/debug/tsupdate' (x86_64)\n    Process 7265 stopped\n    * thread #1: tid = 101113, 0x00000000010c982b tsupdate`tsupdate::main::h8bec70c0222b27b2 + 11, stop reason = breakpoint 1.1\n        frame #0: 0x00000000010c982b tsupdate`tsupdate::main::h8bec70c0222b27b2 + 11\n    tsupdate`tsupdate::main::h8bec70c0222b27b2:\n    ->  0x10c982b <+11>: movb   $0x0, -0x2e1(%rbp)\n        0x10c9832 <+18>: movb   $0x0, -0x2de(%rbp)\n        0x10c9839 <+25>: movb   $0x0, -0x2db(%rbp)\n        0x10c9840 <+32>: movb   $0x0, -0x2d9(%rbp)\n    (lldb) image list\n    [  0] 01FC6739-0000-0000-0000-000000000000                    /usr/home/ualt/tsupdate_rust/target/debug/tsupdate\n    [  1] 1F9F33BA-0000-0000-0000-000000000000                    /lib/libthr.so.3\n          /usr/lib/debug/lib/libthr.so.3.debug\n    [  2] C0DF7F3D-0000-0000-0000-000000000000                    /lib/libgcc_s.so.1\n          /usr/lib/debug/lib/libgcc_s.so.1.debug\n    [  3] 53AD8C42-0000-0000-0000-000000000000                    /lib/libc.so.7\n          /usr/lib/debug/lib/libc.so.7.debug\n    [  4] D9B23F51-0000-0000-0000-000000000000                    /libexec/ld-elf.so.1\n          /usr/lib/debug/libexec/ld-elf.so.1.debug\n    (lldb) script lldb.target.module['/usr/home/ualt/tsupdate_rust/target/debug/tsupdate']\n    <lldb.SBModule; proxy of <Swig Object of type 'lldb::SBModule *' at 0x808f3d660> >\n    (lldb) script lldb.target.module['/usr/home/ualt/tsupdate_rust/target/debug/tsupdate'].GetNumCompileUnits()\n    60\n    (lldb) q\n    Quitting LLDB will kill one or more processes. Do you really want to proceed: [Y/n] y\n    ~/tsupdate_rust/target% \n    ~/tsupdate_rust/target% cd ~/cpp\n    ~/cpp% clang++ --version\n    clang version 3.9.0 (tags/RELEASE_390/final)\n    Target: x86_64-unknown-freebsd12.0\n    Thread model: posix\n    InstalledDir: /usr/local/llvm39/bin\n    ~/cpp% clang++ -g hello.cc \n    ~/cpp% lldb a.out\n    (lldb) target create \"a.out\"\n    Current executable set to 'a.out' (x86_64).\n    (lldb) b main\n    Breakpoint 1: where = a.out`main + 35 at hello.cc:4, address = 0x0000000000401083\n    (lldb) r\n    Process 7562 launching\n    Process 7562 launched: '/usr/home/ualt/cpp/a.out' (x86_64)\n    Process 7562 stopped\n    * thread #1: tid = 101114, 0x0000000000401083 a.out`main + 35 at hello.cc:4, stop reason = breakpoint 1.1\n        frame #0: 0x0000000000401083 a.out`main + 35 at hello.cc:4\n       1    #include <iostream>\n       2   \n       3    int main() {\n    -> 4      std::cout << \"Hello !\" << std::endl;\n       5      return 0;\n       6    }\n       7   \n    (lldb) q\n    Quitting LLDB will kill one or more processes. Do you really want to proceed: [Y/n] \n",
+			"file": "//nas/austausch/rust-debug.txt",
+			"file_size": 3035,
+			"file_write_time": 131281655920000000,
+			"settings":
+			{
+				"buffer_size": 4090,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/credentials.yaml",
+			"settings":
+			{
+				"buffer_size": 137,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -200,15 +248,6 @@
 			"settings":
 			{
 				"buffer_size": 3492,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/temp/test/TopSolid'Update.txt",
-			"settings":
-			{
-				"buffer_size": 112014,
-				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -307,14 +346,10 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "cargo ",
+		"height": 104.0,
+		"last_filter": "git push",
 		"selected_items":
 		[
-			[
-				"cargo ",
-				"Build With: Cargo"
-			],
 			[
 				"git push",
 				"Git: Push"
@@ -326,6 +361,10 @@
 			[
 				"git add",
 				"Git: Add..."
+			],
+			[
+				"cargo ",
+				"Build With: Cargo"
 			],
 			[
 				"git ad",
@@ -700,7 +739,7 @@
 				"Dart: Format"
 			]
 		],
-		"width": 400.0
+		"width": 432.0
 	},
 	"console":
 	{
@@ -726,8 +765,9 @@
 	],
 	"file_history":
 	[
-		"/C/temp/test/7.10/x64/TopSolid'Cam Post Processors Base/Update - TopSolid'Cam Post Processors Base 7.10.300.0 to 7.10.300.93 ServicePack4 x64 Updates Notes.fr.pdf",
 		"/C/temp/test/TopSolid'Update.txt",
+		"/C/Users/ualt/.multirust/toolchains/nightly-x86_64-pc-windows-gnu/lib/rustlib/src/rust/src/libstd/fs.rs",
+		"/C/temp/test/7.10/x64/TopSolid'Cam Post Processors Base/Update - TopSolid'Cam Post Processors Base 7.10.300.0 to 7.10.300.93 ServicePack4 x64 Updates Notes.fr.pdf",
 		"/C/Users/ualt/AppData/Roaming/Sublime Text 3/Packages/User/BeautifyRust.sublime-settings",
 		"/C/backup/work/rust/tsupdate_rust/.gitignore",
 		"/C/backup/work/rust/tsupdate_rust/Cargo.toml",
@@ -852,8 +892,7 @@
 		"/C/backup/ppv7/akg/Akg.Addin/Heidenhain.ini",
 		"/C/temp/Mpf6116_VSC800.nwd",
 		"/C/temp/Mpf6116_Topsolid7.nwd",
-		"/C/Users/ualt/AppData/Local/Temp/1300779900_BEARBEITUNG.h",
-		"/C/backup/ppv7/Prosup/Heidenhain.cs"
+		"/C/Users/ualt/AppData/Local/Temp/1300779900_BEARBEITUNG.h"
 	],
 	"find":
 	{
@@ -895,6 +934,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"[ualt@trueos-7337] ",
+			"ualt@trueos-7337] ",
 			"println",
 			"access",
 			"headers",
@@ -1020,16 +1061,15 @@
 			"Prosup",
 			"ErpPartNumber",
 			"C4",
-			"BEGIN,CASES",
-			"cases",
-			"_BEGIN_CASES"
+			"BEGIN,CASES"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"",
 			"Preinfalk",
 			"",
 			"call link.bat ",
@@ -1086,7 +1126,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1095,15 +1135,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9611,
+						"buffer_size": 10924,
 						"regions":
 						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+									[
+										9124,
+										9124
+									]
+								],
+								"scope": "bookmarks"
+							}
 						},
 						"selection":
 						[
 							[
-								7640,
-								7640
+								10830,
+								10830
 							]
 						],
 						"settings":
@@ -1113,14 +1166,73 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3585.0,
+						"translation.y": 3980.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "//nas/austausch/rust-debug.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								4090
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 435.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
+					"file": "src/credentials.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "Cargo.toml",
 					"semi_transient": false,
 					"settings":
@@ -1144,11 +1256,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": ".gitignore",
 					"semi_transient": false,
 					"settings":
@@ -1172,11 +1284,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "README.md",
 					"semi_transient": false,
 					"settings":
@@ -1200,7 +1312,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1210,7 +1322,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "/C/backup/work/dartproject/tsupdate/bin/UpdateItem.dart",
 					"semi_transient": false,
 					"settings":
@@ -1222,8 +1334,8 @@
 						"selection":
 						[
 							[
-								2198,
-								2198
+								1480,
+								1601
 							]
 						],
 						"settings":
@@ -1240,36 +1352,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "/C/temp/test/TopSolid'Update.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 112014,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								210,
-								210
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 7,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1292,11 +1375,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "/C/backup/work/dartproject/tsupdate/bin/UpdateData.dart",
 					"semi_transient": false,
 					"settings":
@@ -1322,7 +1405,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -1356,7 +1439,7 @@
 		"cols":
 		[
 			0.0,
-			0.69375,
+			0.47125,
 			1.0
 		],
 		"rows":
@@ -1390,7 +1473,7 @@
 	"project": "tsupdate_rust.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":

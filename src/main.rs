@@ -271,8 +271,11 @@ fn check_md5_sums(args: &Args, web: &mut Vec<UpdateItem>) {
                 let mut md5_con = md5::Context::new();
                 match std::io::copy(&mut inf, &mut md5_con) {
                     Ok(_) => {
-                        ui.checked = format!("{:X}", md5_con.compute()) == ui.digest;
-                        std::fs::remove_file(path).unwrap();
+                        let form_digest = format!("{:X}", md5_con.compute());
+                        ui.checked =  form_digest == ui.digest;
+                        if !ui.checked {
+                            std::fs::remove_file(path).unwrap();
+                        }
                     }
                     Err(_) => {}
                 }
